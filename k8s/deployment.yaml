@@ -15,6 +15,6 @@ spec:
       containers:
         - name: web
           image: ghcr.io/antoniojhb/tec532-campus-events:latest
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
