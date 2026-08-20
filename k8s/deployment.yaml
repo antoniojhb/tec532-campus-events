@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: ghcr.io/INSTRUCTOR_USERNAME/tec532-campus-events:latest
+          image: ghcr.io/antoniojhb/tec532-campus-events:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
