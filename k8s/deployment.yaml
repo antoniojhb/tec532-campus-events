@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: campus-events
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: campus-events
+  template:
+    metadata:
+      labels:
+        app: campus-events
+    spec:
+      containers:
+        - name: web
+          image: ghcr.io/INSTRUCTOR_USERNAME/tec532-campus-events:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
